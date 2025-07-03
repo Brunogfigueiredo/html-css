@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: xilosa;
+    src: url(fonte/xilosa_.ttf);
+}
+
+:root {
+--fonte-padrao: 'xilosa';
+}
+
+* { 
+    margin: 0px;
+
+
+}
+
+
+header { 
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    width: 100%vh;
+    font-family: var(--fonte-padrao);
+    
+
+
+}
+
+header a { 
+    text-decoration: none;
+    color: aliceblue;
+
+
+}
+
+header a:hover { 
+    text-decoration: underline;
+    color: red;
+
+}
+
+#p1 { 
+    padding: 10px;
+    background-color: white;
+
+
+}
+
+#p2 { 
+    padding: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(imagens/background001.jpg);
+
+
+}
+
+
+footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+
+
+}
