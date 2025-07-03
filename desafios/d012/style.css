@@ -42,6 +42,15 @@ header a:hover {
 
 }
 
+#container { 
+     background-size: 100% 100%;
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+
+
+}
+
 #p1 { 
     padding: 10px;
     background-color: white;
@@ -51,10 +60,12 @@ header a:hover {
 
 #p2 { 
     padding: 10px;
+    width: 100%vh;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(imagens/background001.jpg);
+    color: white;
 
 
 }
