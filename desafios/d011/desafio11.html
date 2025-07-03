@@ -16,10 +16,26 @@
 
     }
 
-    #imagem {
-        background-size: auto;
+    #container {
+        height: 96vh;
+        position: relative;
 
-            
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url(imagens/astronauta.png);
+
+
+    }
+
+    #conteudo {
+        
+        background-size: 100% 100%;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
 
 
     }
@@ -32,11 +48,11 @@
 </head>
 <body>
 
-    <section>
+    <section id="container">
 
-            <article>
+            <article id="conteudo">
 
-                <img src="imagens/astronauta.png" alt="astronauta" id="imagem">
+            
 
             </article>
 
