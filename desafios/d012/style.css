@@ -1,19 +1,20 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: xilosa;
-    src: url(fonte/xilosa_.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 :root {
---fonte-padrao: 'xilosa';
+--fonte-padrao: "Passion One", sans-serif;
 }
 
 
 * {
     margin: 0px;
-    p { padding: 20px;}
+    padding: 0px;
+}
 
+html, body { 
+    min-height: 100vh;
+    background-color: darkgray;
 
 }
 
@@ -22,47 +23,36 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 60px;
-    width: 100%vh;
-    font-family: var(--fonte-padrao);
     
+}
+header h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
 
 
 }
 
-header a { 
+header > p { 
+    padding-bottom: 50px;
+}
+
+header a, footer a { 
     text-decoration: none;
     color: aliceblue;
+    font-weight: bolder;
 
 
 }
 
-header a:hover { 
+header a:hover, footer a:hover { 
     text-decoration: underline;
-    color: red;
 
 }
 
-container { 
-    background-size: 100% 100%;
-    position: relative;
-    
-
-
-}
-
-#p1 { 
-    height: 200px;
-    width: 200px;
-   
-    background-color: white;
-
-
-
-}
 
 #p2 { 
     height: 500px;
+    font-size: 1.5em;
 
     background-position: center center;
     background-attachment: fixed;
@@ -75,8 +65,10 @@ container {
 
 }
 
+
 #p5 { 
     height: 500px;
+    font-size: 1.5em;
 
     background-position: center center;
     background-attachment: fixed;
@@ -89,14 +81,36 @@ container {
 
 }
 
+section { 
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+
+}
+
+section.normal { 
+    background-color: white;
+    color: black;
+
+}
+
+section.imagem {
+    background-color: gray;
+    color: white;
+}
+
+section.imagem > p { 
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 400px;
+
+}
+
 
 footer {
 
     background-color: black;
     color: white;
     text-align: center;
-
-    padding: 10;
-
-
+    padding: 10px;
 }
