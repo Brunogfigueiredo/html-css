@@ -14,13 +14,33 @@
         }
 
         table {
-            width: 800px;
+            width: 600px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption { 
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+            border: 1px solid black;
         }
 
         thead, tfoot{ 
             background-color: gray;
-            color: white;
+            color: rgb(0, 0, 0);
+        }
+
+        thead > tr > th { 
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) { 
+
+            background-color: gray;
         }
 
         td, th { 
@@ -43,6 +63,8 @@
     <!-- 
     Anatomia para Tabelas Grandes
 
+    CAPTION - Legenda da tabela ou título da tabela
+
     Table 
     THEAD
         TR, TD, TH
@@ -57,13 +79,15 @@
 
     <table>
 
+        <caption> População das Unidades Federativas</caption>
+
         <thead>
 
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% do total (2024)</th>
-                <th>País comparável (habitantes)</th>
+                <th scope="col" style="width: 135px;">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
+                <th scope="col" style="width: 20px;">% do total (2024)</th>
+                <th scope="col">País comparável (habitantes)</th>
 
             </tr>
 
@@ -186,135 +210,13 @@
 
             </tr>
 
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-
-        
-
 
         </tbody>
 
         <tfoot>
 
             <tr> 
-                <th> Total de Habitantes</th>
+                <th scope="row"> Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
                 <td></td>
                 <td></td>
@@ -324,6 +226,23 @@
         </tfoot>
     </table>
 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur ipsa voluptatibus tempore consectetur, excepturi labore, nemo temporibus tempora rem dolore neque at assumenda saepe aut beatae adipisci reiciendis sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero impedit asperiores, at tenetur quidem a! Cum at fuga veniam quisquam totam, tempore, tenetur natus facere sapiente cupiditate quae autem error! Lorem ipsum, dolor sit amet consectetur adipisicing elit. At enim aperiam dolores. Quae dolorum, aliquid recusandae molestias dicta tempora, nisi ullam vero adipisci veniam aut voluptas illum quis distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure at magni quam sequi, unde tenetur! Repellat nostrum voluptates saepe? Mollitia, animi. Aperiam, dolor repudiandae iusto eligendi nesciunt doloremque ipsum?</p>
 
     
 </body>
