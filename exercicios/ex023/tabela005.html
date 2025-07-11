@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercícios com Tabelas</title>
+
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif;}
+
+        table { width: 500px; border-collapse: collapse; margin: auto;}
+
+        caption { font-size: 1.3em; font-weight: bolder; padding: 10px;}
+
+        th, td { border: 1px solid black; padding: 8px;}
+
+        h1 { text-align: center;}
+
+        tr.vermelho { background-color: red;}
+
+        col.cnome { background-color: yellow;}
+
+        .csexo { background-color: pink;}
+
+        col.cgrupo { background-color: green;}
+
+        
+    </style>
+</head>
+<body>
+
+    
+
+    <h1> Exercício de Tabela </h1>
+
+    <table>
+
+        <colgroup> 
+            <col class="cnome"> 
+            <col class="csexo">
+            <col class="cgrupo" span="2">
+        
+        </colgroup>
+
+        <caption> Cadastro </caption>
+
+        <tr>
+            <th scope="col"> Nome </th>
+            <th scope="col"> Sexo </th>
+            <th scope="col"> Idade </th>
+            <th scope="col"> Profissão </th>
+        </tr>
+
+        <tr>
+            <td> Ana Maria </td>
+            <td> F </td>
+            <td> 24 </td>
+            <td> Jornalista </td>
+        </tr>
+
+        <tr>
+            <td> Maria Luiza </td>
+            <td> F </td>
+            <td> 24 </td>
+            <td> Piranha </td>
+        </tr>
+
+        <tr>
+            <td> Ana Clara </td>
+            <td> F </td>
+            <td> 22 </td>
+            <td> Piranha </td>
+        </tr>
+
+        <tr>
+            <td> Hiandra </td>
+            <td> F </td>
+            <td> 20 </td>
+            <td> Ariranha </td>
+        </tr>
+
+        <tr>
+            <td> Isa </td>
+            <td> F </td>
+            <td> 20 </td>
+            <td> Vaca Mococa </td>
+        </tr>
+
+        <tr>
+            <td> Wallison </td>
+            <td> M </td>
+            <td> 24 </td>
+            <td> Galinha </td>
+        </tr>
+
+        <tr>
+            <td> Gabriel </td>
+            <td> M </td>
+            <td> 24 </td>
+            <td> Galinha 2 </td>
+        </tr>
+
+        <tr class="vermelho">
+            <td> Bruno </td>
+            <td> M </td>
+            <td> 25 </td>
+            <td> Moneysexual </td>
+        </tr>
+
+        <tr>
+            <td> Edina </td>
+            <td> F </td>
+            <td> 60 </td>
+            <td> Professora </td>
+        </tr>
+
+        <tr>
+            <td> Milena </td>
+            <td> F </td>
+            <td> 22 </td>
+            <td> Parrudinha </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
