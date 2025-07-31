@@ -36,7 +36,7 @@ img#pc {display: none;}
 img#tv {display: none;}
 }
 
-@media screen and (min-width:768px) /* TABLET*/
+@media screen and (min-width: 668px) and (max-width: 992px) /* TABLET*/
 {
     body { background-image: url(../imagens/back-tablet.jpg);
     }
@@ -49,7 +49,7 @@ img#pc {display: none;}
 img#tv {display: none;}
 }
 
-@media screen and (min-width:992px) /* DESKTOP*/
+@media screen and (min-width: 992px) and (max-width: 1200px) /* DESKTOP*/
 {
     body { 
         background-image: url(../imagens/back-computador.jpg);
@@ -61,10 +61,10 @@ img#pc {display: block;}
 img#tv {display: none;}
 }
 
-@media screen and(min-width:1200px) /* GRANDES TELAS*/
+@media screen and (min-width: 1200px) /* GRANDES TELAS*/
 {
     body {
-        background-image: url(../imagens/smart-tv.png);
+        background-image: url(../imagens/back-televisão.jpg);
     }
 img#phone {display: none;}
 img#tablet {display: none;}
