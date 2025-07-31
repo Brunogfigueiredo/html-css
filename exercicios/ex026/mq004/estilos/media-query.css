@@ -49,7 +49,7 @@ img#pc {display: none;}
 img#tv {display: none;}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) /* DESKTOP*/
+@media screen and (min-width: 992px) and (max-width: 1024px) /* DESKTOP*/
 {
     body { 
         background-image: url(../imagens/back-computador.jpg);
