@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.container {
+            border: 3px solid red;
+            padding: 5px;
+            display: grid;
+            gap: 10px;
+
+            grid-template: repeat(3, 50px) 50px / repeat(3, 100px); 
+            grid-auto-rows: 50px;
+            grid-column: 50px;
+            grid-auto-flow: row;
+
+            place-items: stretch end;
+            place-content: space-around space-around;
+
+            
+        }
+
+        div.item {
+            border: 3px solid blue;
+            padding: 5px;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+    </div>
+    
+</body>
+</html>
